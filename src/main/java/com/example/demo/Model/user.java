@@ -1,6 +1,7 @@
 package com.example.demo.Model;
 
 import java.io.Serializable;
+
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Entity;
