@@ -12,18 +12,16 @@ import jakarta.validation.constraints.NotBlank;
 @Table(name = "users")
 
 public class user implements Serializable {
-    private static final long serialVersionUID = 1L;
-    private
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     
     long id;
 
-    @NotBlank(message = "Name is mandatory")
+    @NotBlank
     String name;
-    @NotBlank(message = "Email is mandatory")       
+    @NotBlank
     String email;
-    @NotBlank(message = "Password is mandatory")
+    @NotBlank
     String password;
     public long getId() {
         return id;
